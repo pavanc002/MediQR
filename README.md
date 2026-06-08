@@ -2,7 +2,24 @@
 
 **Scan it before you swallow it** 🔍
 
-MediQr is a comprehensive medicine verification and management system designed to enhance pharmaceutical safety and transparency. The platform empowers administrators to manage medicine databases with detailed product information, while users can scan QR codes on medicine packaging to instantly access complete details of individual tablet including expiry dates, batch numbers, and manufacturer information.
+MediQr is a comprehensive medicine verification and management system designed to enhance pharmaceutical safety and transparency. The platform empowers administrators to manage medicine databases with detailed product information, while users can scan QR codes on medicine packaging to instantly access individual tablet details of every strip including expiry dates, batch numbers, and manufacturer information.
+
+## 🚀 Live Demo
+
+**Admin Portal:** [https://mediqr-admin-portal.vercel.app/](https://mediqr-admin-portal.vercel.app/)
+
+### Try It Now! 
+
+Scan the QR codes or view medicine details:
+
+| Medicine | Strength | Expiry | Link |
+|----------|----------|--------|------|
+| **Rosuvastatin** | 5mg | 2026-01 | [View Details](https://mediqr-admin-portal.vercel.app/p/CH1QWWJ4) |
+| **Cetirizine** | 10mg | 2026-11 | [View Details](https://mediqr-admin-portal.vercel.app/p/OLVKbV9Y) |
+
+**Pro Tip:** 📷 Scan the QR codes from the medicine detail pages with your phone camera or any QR code scanner app to experience the full functionality!
+
+---
 
 ## 🌟 Features
 
@@ -96,6 +113,60 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## ⚡ Quick Start Demo (No Installation Needed!)
+
+Want to see MediQr in action without installing anything?
+
+**Just visit:** [https://mediqr-admin-portal.vercel.app/](https://mediqr-admin-portal.vercel.app/)
+
+### Try These Example Medicines:
+
+1. **Rosuvastatin 5mg**
+   - Expiry: 2026-01
+   - [View Details →](https://mediqr-admin-portal.vercel.app/p/CH1QWWJ4)
+   - Scan the QR code to verify authenticity
+
+2. **Cetirizine 10mg**
+   - Expiry: 2026-11
+   - [View Details →](https://mediqr-admin-portal.vercel.app/p/OLVKbV9Y)
+   - Complete product information instantly available
+
+## 📱 How to Use
+
+### For End Users (QR Scanning)
+
+1. **Access the Public Portal**
+   - Visit the medicine detail page via QR code
+   - Example: [Rosuvastatin Details](https://mediqr-admin-portal.vercel.app/p/CH1QWWJ4)
+
+2. **View Medicine Information**
+   - Product name and strength
+   - Manufacturer details
+   - Expiry date and batch number
+   - Complete product description
+
+3. **Scan QR Codes**
+   - Use any QR code scanner app
+   - Point camera at medicine packaging QR code
+   - Instantly access verified medicine details
+
+### For Administrators
+
+1. **Login to Admin Portal**
+   - Navigate to [Admin Portal](https://mediqr-admin-portal.vercel.app/)
+   - Authenticate with admin credentials
+
+2. **Manage Medicines**
+   - Create new medicine entries
+   - Update existing records
+   - Delete outdated entries
+   - Automatic QR code generation (2400x2400px PDF)
+
+3. **Generate QR Codes**
+   - System automatically creates high-resolution QR codes
+   - Download as PDF
+   - Print and apply to medicine packaging
 
 ## 📁 Project Structure
 
@@ -206,18 +277,38 @@ The project uses `better-auth` for authentication. Admin access is controlled vi
 
 ## 📦 Deployment
 
-### Deploy on Vercel (Recommended)
+### ✅ Currently Deployed on Vercel
 
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Add environment variables in Vercel dashboard
-4. Deploy with a single click
+This project is **live and production-ready** on Vercel:
+
+🔗 **Live URL:** [https://mediqr-admin-portal.vercel.app/](https://mediqr-admin-portal.vercel.app/)
+
+The application automatically deploys from the main branch. Each push triggers a new deployment with zero downtime.
+
+### Deploy Your Own
+
+1. **Fork/Clone** this repository
+2. **Connect to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+3. **Add Environment Variables:**
+   - `TURSO_CONNECTION_URL`
+   - `TURSO_AUTH_TOKEN`
+   - `AUTH_SECRET`
+4. **Deploy** - Vercel will automatically build and deploy
 
 ```bash
 # For manual deployment
 npm run build
 npm run start
 ```
+
+### Other Deployment Options
+
+- **Docker**: Create a Dockerfile for containerization
+- **Self-hosted**: Deploy to your own server
+- **Railway, Render, Fly.io**: Alternative hosting platforms
 
 ## 🔄 Available Scripts
 
@@ -302,6 +393,12 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 👨‍💻 Author
+
+**Your Name**
+- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: your.email@example.com
+- Portfolio: [yourportfolio.com](https://yourportfolio.com)
 
 ## 🙏 Acknowledgments
 
@@ -310,6 +407,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com) - Styling
 - [Drizzle ORM](https://orm.drizzle.team) - Database ORM
 - [Turso](https://turso.tech) - Database hosting
+- [![Next.js](https://img.shields.io/badge/Next.js-15.3.5-black?logo=next.js)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19.0-61dafb?logo=react)](https://reactjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06b6d4?logo=tailwindcss)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Deployed](https://img.shields.io/badge/Status-Live%20on%20Vercel-success?logo=vercel)](https://mediqr-admin-portal.vercel.app/)
 
 ## 📞 Support
 
@@ -319,6 +422,7 @@ If you encounter any issues or have questions:
 2. Search existing [GitHub Issues](https://github.com/yourusername/mediqr/issues)
 3. Create a new issue with detailed information
 4. Contact the author directly
+
 
 ## 🔮 Future Enhancements
 
